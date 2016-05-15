@@ -1,0 +1,476 @@
+<html>
+ <head> 
+  <script src="jquery-1.12.3.min.js"></script> 
+  <script type="text/javascript">
+           $(document).ready(function(){
+
+               $(".panel").click(function(){
+               var id1=$(this).attr("id");
+                $("div.status").hide();
+                $("div[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+               $(".TestCase").click(function(){
+               var id1=$(this).attr("id");
+                $("tr[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+               $(".itr").click(function(){
+               var id1=$(this).attr("id");
+                $("table[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+
+           });
+      </script> 
+ </head> 
+ <body> 
+  <h1><font face="Calibri" color="grey">Test Summmary of Modulues</font></h1>
+  <font face="Calibri" color="grey"> 
+   <table id="mainTable" border="2px" width="25%" height="20%"> 
+    <tbody> 
+     <tr id="mainHeaders">
+      <td>S.NO</td>
+      <td>FunctionalityName</td>
+      <td>Tp</td>
+      <td>TF</td>
+      <td>TotalTestCase</td>
+     </tr> 
+     <tr id="Role1">
+      <td>1</td>
+      <td>Role1</td>
+      <td class="panel" id="Role1Pass">Tp</td>
+      <td class="panel" id="Role1Fail">TF</td>
+      <td class="panel" id="Role1Total">TotalTestCase</td>
+     </tr>
+     <tr id="Role2">
+      <td>2</td>
+      <td>Role2</td>
+      <td class="panel" id="Role2Pass">Tp</td>
+      <td class="panel" id="Role2Fail">TF</td>
+      <td class="panel" id="Role2Total">TotalTestCase</td>
+     </tr>
+    </tbody> 
+   </table>   </font>
+  <div class="status" align="center" style="display:none" name="Role1Pass">
+   <h1><font face="Calibri" color="grey" align="center">Role1 Pass Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role1statustc_003_login">
+      <td>1</td>
+      <td>tc_003_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Passtc_003_login" class="itr" id="Role1Passtc_003_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role1Totaltc_003_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role1statustc_004_login">
+      <td>3</td>
+      <td>tc_004_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Passtc_004_login" class="itr" id="Role1Passtc_004_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role1Totaltc_004_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="status" align="center" style="display:none" name="Role1Fail">
+   <h1><font face="Calibri" color="grey" align="center">Role1 Fail Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role1statustc_001_login">
+      <td>1</td>
+      <td>tc_001_login</td>
+      <td>Fail</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Failtc_001_login" class="itr" id="Role1Failtc_001_login0">
+      <td colspan="5" align="center">
+       <div>
+        iterator:0
+       </div>
+       <table style="display:none" name="Role1Totaltc_001_login0" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="status" align="center" style="display:none" name="Role1Total">
+   <h1><font face="Calibri" color="grey" align="center">Role1 Total Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role1Totaltc_001_login">
+      <td>1</td>
+      <td>tc_001_login</td>
+      <td>Fail</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Totaltc_001_login" class="itr" id="Role1Totaltc_001_login0">
+      <td colspan="5" align="center">
+       <div>
+        iterator:0
+       </div>
+       <table style="display:none" name="Role1Totaltc_001_login0" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role1Totaltc_003_login">
+      <td>3</td>
+      <td>tc_003_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Totaltc_003_login" class="itr" id="Role1Totaltc_003_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role1Totaltc_003_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role1Totaltc_004_login">
+      <td>5</td>
+      <td>tc_004_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role1Totaltc_004_login" class="itr" id="Role1Totaltc_004_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role1Totaltc_004_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="status" align="center" style="display:none" name="Role2Pass">
+   <h1><font face="Calibri" color="grey" align="center">Role2 Pass Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role2statusRole2_tc_002_login">
+      <td>1</td>
+      <td>Role2_tc_002_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2PassRole2_tc_002_login" class="itr" id="Role2PassRole2_tc_002_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_002_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role2statusRole2_tc_003_login">
+      <td>3</td>
+      <td>Role2_tc_003_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2PassRole2_tc_003_login" class="itr" id="Role2PassRole2_tc_003_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_003_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role2statusRole2_tc_004_login">
+      <td>5</td>
+      <td>Role2_tc_004_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2PassRole2_tc_004_login" class="itr" id="Role2PassRole2_tc_004_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_004_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="status" align="center" style="display:none" name="Role2Fail">
+   <h1><font face="Calibri" color="grey" align="center">Role2 Fail Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role2statusRole2_tc_001_login">
+      <td>1</td>
+      <td>Role2_tc_001_login</td>
+      <td>Fail</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2FailRole2_tc_001_login" class="itr" id="Role2FailRole2_tc_001_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_001_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="status" align="center" style="display:none" name="Role2Total">
+   <h1><font face="Calibri" color="grey" align="center">Role2 Total Test Summary</font></h1>
+   <table border="2px" width="20%" height="15%">
+    <tbody>
+     <tr>
+      <th>SNO</th>
+      <th>TestCaseName</th>
+      <th>Status</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+     </tr>
+     <tr class="TestCase" id="Role2TotalRole2_tc_001_login">
+      <td>1</td>
+      <td>Role2_tc_001_login</td>
+      <td>Fail</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2TotalRole2_tc_001_login" class="itr" id="Role2TotalRole2_tc_001_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_001_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role2TotalRole2_tc_002_login">
+      <td>3</td>
+      <td>Role2_tc_002_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2TotalRole2_tc_002_login" class="itr" id="Role2TotalRole2_tc_002_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_002_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role2TotalRole2_tc_003_login">
+      <td>5</td>
+      <td>Role2_tc_003_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2TotalRole2_tc_003_login" class="itr" id="Role2TotalRole2_tc_003_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_003_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+     <tr class="TestCase" id="Role2TotalRole2_tc_004_login">
+      <td>7</td>
+      <td>Role2_tc_004_login</td>
+      <td>Pass</td>
+      <td>136:36:2016 18:36:09</td>
+      <td>136:36:2016 18:36:09</td>
+     </tr>
+     <tr style="display:none" name="Role2TotalRole2_tc_004_login" class="itr" id="Role2TotalRole2_tc_004_login1">
+      <td colspan="5" align="center">
+       <div>
+        iterator:1
+       </div>
+       <table style="display:none" name="Role2TotalRole2_tc_004_login1" border="1.5px" width="15%" height="15%">
+        <tbody>
+         <tr>
+          <th>SNO</th>
+          <th>TestStep</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>TimeStamp</th>
+         </tr>
+        </tbody>
+       </table></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>

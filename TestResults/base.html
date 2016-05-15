@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <script src="jquery-1.12.3.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+
+               $(".panel").click(function(){
+               var id1=$(this).attr("id");
+                $("div.status").hide();
+                $("div[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+               $(".TestCase").click(function(){
+               var id1=$(this).attr("id");
+                $("tr[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+               $(".itr").click(function(){
+               var id1=$(this).attr("id");
+                $("table[name='"+id1+"']").slideToggle("slow"); 
+                }); 
+
+
+           });
+      </script>
+   </head>
+   <body>
+      <h1><font face="Calibri" color="grey">Test Summmary of Modulues</font0></h1>
+      <table id="mainTable" border="2px" width="25%" height="20%">
+       <tbody>
+       <tr id="mainHeaders"><td>S.NO</td><td>FunctionalityName</td><td>Tp</td><td>TF</td><td>TotalTestCase</td></tr>
+      </tbody>
+      </table>
+      
+   </body>
+</html>
